@@ -1,0 +1,7 @@
+<h1 [@openClose]="lastKeyPressed()?.index">{{ lastKeyPressed()?.key }}</h1>
+
+<span class="secondary">
+  @for (key of keysPressed; track $index;) {
+  {{ key }}
+  }
+</span>
